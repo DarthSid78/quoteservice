@@ -1,8 +1,6 @@
 package nl.jwse.db;
 
-import com.opencsv.CSVIterator;
 import com.opencsv.CSVReader;
-import com.opencsv.bean.CsvToBeanBuilder;
 import io.dropwizard.lifecycle.Managed;
 import nl.jwse.api.Quote;
 import org.slf4j.Logger;
