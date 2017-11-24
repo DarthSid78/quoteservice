@@ -13,9 +13,9 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.APPLICATION_JSON)
 public class QuoteResource {
 
-    private QuoteRepository repository;
+    private final QuoteRepository repository;
 
-    public  QuoteResource(QuoteRepository repository) {
+    public QuoteResource(QuoteRepository repository) {
         this.repository = repository;
     }
 

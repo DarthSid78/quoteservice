@@ -4,11 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Quote {
 
-    private long id;
+    private final long id;
 
-    private String author;
+    private final String author;
 
-    private String content;
+    private final String content;
 
     public Quote(long id, String author, String content) {
         this.id = id;
