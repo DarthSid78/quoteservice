@@ -1,0 +1,38 @@
+swagger: '2.0'
+info:
+  title: quoteservice
+  description: Quoteservice is a simple API allowing consumers to retrieve famous quotes.
+  version: "3"
+  contact:
+    name: API Support
+    url: https://github.com/DarthSid78/quoteservice
+  license:
+    name: MIT License
+    url: https://github.com/DarthSid78/quoteservice/blob/master/LICENSE
+host: quoteservice.sloppy.zone
+basePath: /api
+schemes:
+  - https
+definitions:
+  Quote:
+    properties:
+      id:
+        type: integer
+      author:
+        type: string
+      content:
+        type: string
+paths:
+  /quote:
+    get:
+      summary: Returns a random quote
+      responses:
+        200:
+          description: A random quote
+          schema:
+            $ref: "#/definitions/Quote"
+          examples:
+            application/json:
+              id: 1
+              author: "Forest Gump"
+              content: "Life is like a box of chocolates, you never know what you gonna get."

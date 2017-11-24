@@ -3,6 +3,7 @@ package nl.jwse;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import io.dropwizard.assets.AssetsBundle;
 import nl.jwse.db.QuoteRepository;
 import nl.jwse.resources.QuoteResource;
 
@@ -19,7 +20,7 @@ class QuoteServiceApplication extends Application<QuoteServiceConfiguration> {
 
     @Override
     public void initialize(final Bootstrap<QuoteServiceConfiguration> bootstrap) {
-        // TODO: application initialization
+        bootstrap.addBundle(new AssetsBundle("/assets/", "/", "index.html"));
     }
 
     @Override
