@@ -1,4 +1,4 @@
-# quoteservice
+# Quote Service
 This quoteservice is a simple microservice that returns a random quote.
 
 See a live demo [here](https://quoteservice.sloppy.zone/)
@@ -38,7 +38,7 @@ To see your applications health enter url `http://localhost:8081/healthcheck`
 
 ## Docker Container
 
-A docker image is available on dockerhub
+A docker image is available on [Dockerhub](https://hub.docker.com/r/darthsid78/quoteservice/)
 ```
 docker pull darthsid78/quoteservice
 docker run -p 8080:8080 darthsid78/quoteservice
